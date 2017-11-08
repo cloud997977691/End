@@ -1,0 +1,18 @@
+2017-11-08 00:10:36.714 INFO  com.end.utils.Log 21 info - com.end.utils.TestNGListener: 测试初始化
+2017-11-08 00:10:41.382 INFO  com.end.utils.Log 21 info - com.end.utils.TestNGListener: 【failLogin】测试用例开始执行
+2017-11-08 00:10:41.449 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 打开网址http://192.168.150.1/zentao/www
+2017-11-08 00:10:43.174 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 在元素：用户名输入框 提交admin
+2017-11-08 00:10:43.280 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 在元素：密码输入框 提交123456
+2017-11-08 00:10:43.465 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 元素：登录按钮 点击
+2017-11-08 00:10:46.466 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 等待3秒
+2017-11-08 00:10:46.487 INFO  com.end.utils.Log 21 info - com.end.utils.AssertUtils: 包含断言  实际结果：登录失败，请检查您的用户名或密码是否填写正确。预期结果：失败
+2017-11-08 00:10:46.489 INFO  com.end.utils.Log 21 info - com.end.utils.TestNGListener: 【failLogin】测试用例执行成功
+2017-11-08 00:10:49.619 INFO  com.end.utils.Log 21 info - com.end.utils.TestNGListener: 【loginTest】测试用例开始执行
+2017-11-08 00:10:52.118 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 打开网址http://192.168.150.1/zentao/www
+2017-11-08 00:10:54.142 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 在元素：用户名输入框 提交admin
+2017-11-08 00:10:54.259 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 在元素：密码输入框 提交Cloud0903
+2017-11-08 00:10:56.666 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 元素：登录按钮 点击
+2017-11-08 00:10:58.669 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 等待2秒
+2017-11-08 00:10:58.692 INFO  com.end.utils.Log 21 info - com.end.uiframework.DriverFactory: 获取元素：用户菜单 文本值
+2017-11-08 00:10:58.721 INFO  com.end.utils.Log 21 info - com.end.utils.AssertUtils: 包含断言  实际结果：admin预期结果：admin
+2017-11-08 00:10:58.722 INFO  com.end.utils.Log 21 info - com.end.utils.TestNGListener: 【loginTest】测试用例执行成功

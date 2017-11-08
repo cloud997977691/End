@@ -1,0 +1,118 @@
+<html>
+<head>
+<title>TestNG:  test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 08 00:10:36 CST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22112 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.End.LoginTest.failLogin()'><b>failLogin</b><br>Test class: com.End.LoginTest<br/>
+<a href="#Output-2059592603" onClick='toggleBox("Output-2059592603", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2059592603" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2059592603">
+<span style="color:#2A00FF">【info】com.end.utils.TestNGListener: 【failLogin】测试用例开始执行</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 打开网址http://192.168.150.1/zentao/www</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 在元素：用户名输入框 提交admin</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 在元素：密码输入框 提交123456</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 元素：登录按钮 点击</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 等待3秒</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.utils.AssertUtils: 包含断言  实际结果：登录失败，请检查您的用户名或密码是否填写正确。预期结果：失败</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.utils.TestNGListener: 【failLogin】测试用例执行成功</span><br/><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.End.LoginTest@7c1e2a9e</td></tr>
+<tr>
+<td title='com.End.LoginTest.loginTest()'><b>loginTest</b><br>Test class: com.End.LoginTest<br/>
+<a href="#Output-1489193907" onClick='toggleBox("Output-1489193907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1489193907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1489193907">
+<span style="color:#2A00FF">【info】com.end.utils.TestNGListener: 【loginTest】测试用例开始执行</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 打开网址http://192.168.150.1/zentao/www</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 在元素：用户名输入框 提交admin</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 在元素：密码输入框 提交Cloud0903</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 元素：登录按钮 点击</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 等待2秒</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.uiframework.DriverFactory: 获取元素：用户菜单 文本值</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.utils.AssertUtils: 包含断言  实际结果：admin预期结果：admin</span><br/><br/>
+<span style="color:#2A00FF">【info】com.end.utils.TestNGListener: 【loginTest】测试用例执行成功</span><br/><br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.End.LoginTest@7c1e2a9e</td></tr>
+</table><p>
+</body>
+</html>
